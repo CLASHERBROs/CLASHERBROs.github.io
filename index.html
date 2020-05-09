@@ -21,16 +21,21 @@
               <div class="navbar-nav float-left text-left pr-3">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link" href="#contact-me">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Social</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="https://www.linkedin.com/in/paritosh-arora-442819108/" title="linkedin">Linkedin</a>  
+                        <a class="dropdown-item" href="https://github.com/CLASHERBROs" title="github">GitHub</a>
+                         <a class="dropdown-item" href="https://www.instagram.com/paritosh.exe/" title="instagram">Instagram</a>
+                        </div>
                 </li>
             </ul>
             </div>
@@ -55,9 +60,10 @@
           <hr>
         </div>
        
-        <div class="skills">
-          <h2>My Skills.</h2>
+        <div id="skills">
+  
   <div class="container">
+      <h2>My Skills.</h2>
 <h3 >Development</h3>
     <div class="row">
 <div class="col-lg-4"> <img class="codingImage" src="images/giphy.gif" alt=""></div>
@@ -78,7 +84,7 @@
 
         <section id="projects">
             <h2 style="margin-bottom: 10%;">Some of my Projects</h2>
-            <div id="project-toggler" class="carousel slide" data-ride="carousel" data-interval = 2500 >
+            <div id="project-toggler" class="carousel" data-ride="carousel" data-interval = 2500 >
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                       
@@ -92,14 +98,14 @@
                   </div>
                  
                 </div>
-                <a class="carousel-control-prev" href="#project-toggler" role="button" data-ride="carousel" >
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#project-toggler" role="button" data-slide="next" >
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <a class="carousel-control-prev" href="#project-toggler" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#project-toggler" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
               </div>
 
 
@@ -111,7 +117,7 @@
 
         </section>
        
-        <div class="contact-me">
+        <div id="contact-me">
           <h2>Get In Touch</h2>
           <h3>Wanna squad up?</h3>
           <p class="contact">be for gaming or for developing contact me and we'll squad up together!!</p>
@@ -142,6 +148,9 @@ $nav.toggleClass("scrolled",$(this).scrollTop()>$nav.height());
     });
 
   });
+  $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
 </script>
 </body>
 </html>
