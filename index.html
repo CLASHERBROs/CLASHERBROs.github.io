@@ -12,7 +12,7 @@
 <body>
 
    
-        <nav class="navbar  navbar-expand-lg navbar-light " style="background:#e4f9f5;">
+        <nav id="mainNav" class="navbar  navbar-expand-lg navbar-light fixed-top " >
             <a class="navbar-brand" href=""> <img style= "width:200%;"src="img.png" alt=""> </a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,57 +52,45 @@
          
           <hr>
         </div>
-        <div class="container">
+       
         <div class="skills">
           <h2>My Skills.</h2>
-          <div class="skill-row">
-              <table>
-                  <tr>
-                      <td>
-                            <img class="codingImage" src="images/giphy.gif" alt="">
-                      </td>
-                      <td><h3>Development</h3>
-                        <p>I have been developing since a year now, I am into Augmented Reality and Machine Learning using apple's tools ARKit and CoreML and have created many projects and templates that can be used so do check my github page.</p></td>
-                  </tr>
-              </table>
-             </div>
-          <div class="skill-row">
-            <table>
-                <tr>
-                    <td>
-                            <h3>Gaming</h3>
-                            <p>I have been gaming since 15 or more years, It started with classic games and ended up in FPS,E-sports and much more! My favourite titles include Grand Theft Auto, Call of Duty, Gears of War , Apex Legends and many more fps based games.</p>
-                    </td>
-                    <td>
-                            <img class="" src="images/gaming.gif" alt="">
-                    </td>
-                </tr>
-            </table>
-           
-           
-            
-          </div>
+  <div class="container">
+<h3 >Development</h3>
+    <div class="row">
+<div class="col-lg-4"> <img class="codingImage" src="images/giphy.gif" alt=""></div>
+<div class="col-lg-8"> <p>I have been developing since a year now, I am into Augmented Reality and Machine Learning using apple's tools ARKit and CoreML and have created many projects and templates that can be used so do check my github page.</p></div>
+  </div>
+  <h3 >Gaming</h3>
+<div class="row">
+    <div class="col-lg-8 order-2 order-lg-1"><p>I have been gaming since 15 or more years, It started with classic games and ended up in FPS,E-sports and much more! My favourite titles include Grand Theft Auto, Call of Duty, Gears of War , Apex Legends and many more fps based games.</p></div>
+    <div class="col-lg-4 order-1 order-lg-2">   <img class="codingImage" src="images/gaming.gif" alt=""></div>
+    
+     
+  </div>
+
+</div>
           <hr>
         </div>
-      </div>
+   
 
         <section id="projects">
             <h2 style="margin-bottom: 10%;">Some of my Projects</h2>
-            <div id="project-toggler" class="carousel slide" data-ride="carousel" data-interval = 3000 data-hover = true>
+            <div id="project-toggler" class="carousel slide" data-ride="carousel" data-interval = 2500 >
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                       
           <a href="https://clasherbros.github.io/ColourGuesser/"><img class="testimonial-image" src="rgb.png" alt="dog-profile"></a>
           <h3>Get your rgb skills to pro level!!</h3>         
         </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item ">
   
                     <a href="https://github.com/CLASHERBROs"><img src="github.png" alt=""></a>  
                     <h3 class="testimonial-text">Visit My github for more Projects</h3>
                   </div>
                  
                 </div>
-                <a class="carousel-control-prev" href="#project-toggler" role="button" data-slide="prev" >
+                <a class="carousel-control-prev" href="#project-toggler" role="button" data-ride="carousel" >
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
@@ -144,5 +132,14 @@
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $(document).scroll(function(){
+var $nav = $("#mainNav");
+$nav.toggleClass("scrolled",$(this).scrollTop()>$nav.height());
+    });
+
+  });
+</script>
 </body>
 </html>

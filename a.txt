@@ -1,0 +1,27 @@
+<div class="skill-row">
+              <table>
+                  <tr>
+                      <td>
+                            <img class="codingImage" src="images/giphy.gif" alt="">
+                      </td>
+                      <td><h3>Development</h3>
+                        <p>I have been developing since a year now, I am into Augmented Reality and Machine Learning using apple's tools ARKit and CoreML and have created many projects and templates that can be used so do check my github page.</p></td>
+                  </tr>
+              </table>
+             </div>
+          <div class="skill-row">
+            <table>
+                <tr>
+                    <td>
+                            <h3>Gaming</h3>
+                            <p>I have been gaming since 15 or more years, It started with classic games and ended up in FPS,E-sports and much more! My favourite titles include Grand Theft Auto, Call of Duty, Gears of War , Apex Legends and many more fps based games.</p>
+                    </td>
+                    <td>
+                            <img class="" src="images/gaming.gif" alt="">
+                    </td>
+                </tr>
+            </table>
+           
+           
+            
+          </div>
