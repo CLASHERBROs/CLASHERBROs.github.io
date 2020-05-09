@@ -131,3 +131,14 @@ h3 {
   color: #11999e;
   font-family: "Montserrat", sans-serif;
 }
+#projects{
+  background-color:  #e4f9f5;;
+  padding: 7% 15%;
+  margin-bottom: 10%;
+}
+.carousel-control-next-icon{
+  background-color: black;
+}
+.carousel-control-prev-icon{
+  background-color: black;
+}
