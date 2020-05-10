@@ -91,15 +91,22 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                       
-          <a href="https://clasherbros.github.io/ColourGuesser/"><img class="testimonial-image" src="rgb.png" alt="dog-profile"></a>
+          <a href="https://clasherbros.github.io/ColourGuesser/"><img class="carousel-img" src="rgb.png" alt="dog-profile"></a>
           <h3>Get your rgb skills to pro level!!</h3>         
         </div>
-                  <div class="carousel-item ">
-  
-                    <a href="https://github.com/CLASHERBROs"><img src="github.png" alt=""></a>  
-                    <h3 class="testimonial-text">Visit My github for more Projects</h3>
-                  </div>
                  
+                  <div class="carousel-item ">
+                      <a href="https://github.com/CLASHERBROs/todoApp"><img class="carousel-img" src="todo.png" alt=""></a>  
+                      <h3 class="testimonial-text">Todo iOS app</h3>
+                    </div>
+                    <div class="carousel-item ">
+                        <a href="https://github.com/CLASHERBROs/Covid19-Tracker-ios"><img class="carousel-img" src="covid.png" alt=""></a>  
+                        <h3 class="testimonial-text">iOS Covid Tracker</h3>
+                      </div>
+                      <div class="carousel-item ">
+                          <a href="https://github.com/CLASHERBROs"><img class="carousel-img" src="github.png" alt=""></a>  
+                          <h3 class="testimonial-text">Visit My github for more Projects</h3>
+                        </div>
                 </div>
                 <a class="carousel-control-prev" href="#project-toggler" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -144,13 +151,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+//   var slideShow = document.getElementById("project-toggler");
+// slideShow.toggleClass("project-toggler");
   $(function () {
     $(document).scroll(function(){
 var $nav = $("#mainNav");
 $nav.toggleClass("scrolled",$(this).scrollTop()>$nav.height());
     });
 
+
   });
+  
   $('.navbar-nav li a').on('click', function(){
     if(!$( this ).hasClass('dropdown-toggle')){
         $('.navbar-collapse').collapse('hide');
