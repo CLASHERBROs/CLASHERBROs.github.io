@@ -130,6 +130,12 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
 }
+#typewriter{
+  display: inline;
+}
+.class1{
+  border-right: 2px #eaf6f6 solid;
+}
 h3 {
   color: #11999e;
   font-family: "Montserrat", sans-serif;

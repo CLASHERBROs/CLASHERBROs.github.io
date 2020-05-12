@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
 </head>
@@ -62,7 +62,7 @@
   </div>
   <div class="middle-container">
     <div class="profile">
-      <h2>Hello.</h2>
+      <h2 id="typewriter">Hello.</h2>
       <p class="intro" style="margin-bottom:3px">I am an iOS and Web Developer. I 🎮 and code most of the time!!</p>
       <img src="images/code1.png" id="photo" style="margin-top:0px" alt="">
 
@@ -178,24 +178,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script>
-    //   var slideShow = document.getElementById("project-toggler");
-    // slideShow.toggleClass("project-toggler");
-    $(function () {
-      $(document).scroll(function () {
-        var $nav = $("#mainNav");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-      });
-
-
-    });
-
-    $('.navbar-nav li a').on('click', function () {
-      if (!$(this).hasClass('dropdown-toggle')) {
-        $('.navbar-collapse').collapse('hide');
-      }
-    });
-  </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
