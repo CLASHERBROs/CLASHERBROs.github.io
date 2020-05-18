@@ -1,3 +1,4 @@
+// navbar and dropdown
 $(function () {
     $(document).scroll(function () {
       var $nav = $("#mainNav");
@@ -12,8 +13,26 @@ $(function () {
       $('.navbar-collapse').collapse('hide');
     }
   });
+// carousel
+
+var ptoggle = document.getElementById("project-toggler");
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+   ptoggle.classList.toggle("slide");
+  } else{
+    ptoggle.classList.toggle("slide");
+  }
+
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
 
 
+
+
+// typing animation
   var greetBox = document.getElementById("typewriter");
 var greeting = "Hello.";
 greetBox.textContent = "";
@@ -26,7 +45,7 @@ setInterval(function(){
         tog = false;
     }
    
-// console.log(greeting[i]);
+
 if(!bo){
  
    
@@ -42,7 +61,7 @@ if(!bo){
     
 }if(bo){
 
-    console.log(i);
+  
 greetBox.textContent = greetBox.textContent + greeting[i];
 
 ++i;
