@@ -16,7 +16,7 @@ $(function () {
 // carousel
 
 var ptoggle = document.getElementById("project-toggler");
-function myFunction(x) {
+function toggleSlide(x) {
   if (x.matches) { // If media query matches
    ptoggle.classList.toggle("slide");
   } else{
@@ -25,9 +25,9 @@ function myFunction(x) {
 
 }
 
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction); // Attach listener function on state changes
+var x = window.matchMedia("(max-width: 700px)");
+toggleSlide(x); // Call listener function at run time
+x.addListener(toggleSlide); // Attach listener function on state changes
 
 
 
