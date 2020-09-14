@@ -1,8 +1,12 @@
 // navbar and dropdown
+
 $(function () {
     $(document).scroll(function () {
       var $nav = $("#mainNav");
+      var $navLink = $(".nav-link");
+     
       $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      $navLink.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
 
 

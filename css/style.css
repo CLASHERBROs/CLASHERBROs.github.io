@@ -1,6 +1,6 @@
 .top-container {
   padding-top: 100px;
-  background-color: #e4f9f5;
+  background-color: ecf4f3;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -107,7 +107,7 @@ hr {
 h1 {
   line-height: 2;
   margin-top: 50px auto 0 auto;
-  color: #66bfbf;
+  color: #68b0ab;
   font-family: "Sacramento", cursive;
   font-size: 5.625rem;
 }
@@ -160,10 +160,16 @@ text-align: center;
   margin-bottom: 10%;
 }
 .navbar.scrolled{
-background-color: #e4f9f5;
+background-color: #006a71;
 }
 .navbar-light .navbar-nav .nav-link {
+  color: #ff7e67;
+}
+.navbar-light .navbar-nav .nav-link.scrolled {
   color: black;
+}
+.navbar-light .navbar-nav .nav-link.scrolled:hover {
+  color: white;
 }
 .dropdown-item:hover{
   color:white;
